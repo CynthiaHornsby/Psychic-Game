@@ -14,7 +14,6 @@ document.onkeyup = function(event) {
 
     //Logs what key the user has hit
     var userGuess = event.key;
-    document.getElementById("answer").innerHTML = userGuess;
 
     if (randomLetters.indexOf(userGuess) > -1) {
 
@@ -26,7 +25,7 @@ document.onkeyup = function(event) {
         }
         else if (userGuess !== computerChoice) {
             guesses--;
-            guessLog.push(userGuess);
+     guessLog.push(userGuess);
             if (guesses <= 0) {
                 losses++;
                 guesses = 8;
@@ -36,7 +35,6 @@ document.onkeyup = function(event) {
             }
         }
     }
-    document.getElementById("letter").innerHTML = computerChoice
     document.getElementById("span1").innerHTML = wins;
     document.getElementById("span2").innerHTML = losses;
     document.getElementById("span3").innerHTML = guesses;

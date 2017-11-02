@@ -2,20 +2,33 @@
 <html lang="us-en">
 
 <head>
-    <title>Hangman Game</title>
+    <title>Psychic Game</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+    <div class="container">
 
-    <h1> Psychic Game</h1>
-    <p>Guess What Letter I'm Thinking Of</p>
+        <h1> Psychic Game</h1>
 
-    <p id="answer"></p><br>
-    <p id="letter"></p><br> Wins: <span id="span1"></span><br> Losses: <span id="span2"></span><br> Guesses Left: <span id="span3"></span><br> Guesses so Far: <br><span id="guesslog"></span>
+        <div class="subcontainer">
+            <p>Guess What Letter I'm Thinking Of</p>
 
+            <div class="lineheight">
+
+                <br>Wins: <span id="span1"></span>
+                <br>Losses: <span id="span2"></span>
+                <br>Guesses Left: <span id="span3"></span>
+                <br>Guesses so Far:
+                <br><span id="guesslog"></span>
+
+            </div>
+
+        </div>
+
+    </div>
     <script src="assets/javascript/game.js"></script>
 </body>
 

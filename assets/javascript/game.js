@@ -25,13 +25,12 @@ document.onkeyup = function(event) {
         }
         else if (userGuess !== computerChoice) {
             guesses--;
-     guessLog.push(userGuess);
+            guessLog.push(userGuess);
             if (guesses <= 0) {
                 losses++;
                 guesses = 8;
                 guessLog.length = 0;
                 computerChoice = randomLetters[Math.floor(Math.random() * randomLetters.length)];
-                document.getElementById("letter").innerHTML = computerChoice
             }
         }
     }
